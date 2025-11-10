@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between text-gray-700 text-base">
-          <span>แบบปกติ (Enter = 1):</span>
+          <span>แบบปกติ:</span>
           <span className="font-bold text-blue-700">{normalCount}</span>
         </div>
 
