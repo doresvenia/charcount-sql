@@ -45,9 +45,6 @@ export const metadata = {
     description:
       "เว็บนับจำนวนตัวอักษรออนไลน์",
   },
-  verification: {
-    google: "ca-pub-6302238359656907",
-  },
 };
 
 export default function RootLayout({
