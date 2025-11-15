@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,9 @@ export const metadata = {
     description:
       "เว็บนับจำนวนตัวอักษรออนไลน์",
   },
+  verification: {
+    google: "ca-pub-6302238359656907",
+  },
 };
 
 export default function RootLayout({
@@ -54,21 +58,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Character Counter",
-            url: "https://charcount-sql.vercel.app",
-            description:
-              "เว็บนับจำนวนตัวอักษรออนไลน์เว็บนับจำนวนตัวอักษรออนไลน์",
-            applicationCategory: "Utility",
-            operatingSystem: "Web",
-          }),
-        }}
-      />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "Character Counter",
+              url: "https://charcount-sql.vercel.app",
+              description:
+                "เว็บนับจำนวนตัวอักษรออนไลน์เว็บนับจำนวนตัวอักษรออนไลน์",
+              applicationCategory: "Utility",
+              operatingSystem: "Web",
+            }),
+          }}
+        />
+        <Script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6302238359656907"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
