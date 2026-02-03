@@ -70,6 +70,111 @@ export default function Home() {
           <span className="font-bold text-green-700">{sqlCount}</span>
         </div>
       </section>
+
+      <section
+        className="mt-8 w-full max-w-4xl bg-white p-6 rounded-lg shadow-md"
+        aria-label="ข้อมูลการใช้งานและรายละเอียดเว็บไซต์"
+      >
+        <h2 className="text-2xl font-semibold text-gray-900 mb-3">
+          ทำไมต้องใช้เว็บนับจำนวนตัวอักษรนี้?
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          เครื่องมือนี้ช่วยตรวจสอบจำนวนตัวอักษรได้ทันที เหมาะสำหรับงานเขียน
+          บทความ SEO การโพสต์โซเชียล หรือการเตรียมข้อมูลสำหรับฐานข้อมูลที่ต้องรู้
+          ความยาวข้อความอย่างแม่นยำ พร้อมรองรับการนับแบบ SQL Server LEN
+          ที่นับอักขระขึ้นบรรทัดใหม่เป็น 2 ตัวอักษร เพื่อให้ใกล้เคียงพฤติกรรมของ
+          SQL Server ในงานจริง.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          ฟีเจอร์หลัก
+        </h3>
+        <ul className="list-disc pl-5 text-gray-700 space-y-1 mb-4">
+          <li>นับจำนวนตัวอักษรแบบปกติในทันที</li>
+          <li>นับจำนวนตัวอักษรแบบ SQL Server LEN (Enter = 2)</li>
+          <li>ใช้งานฟรี ไม่ต้องสมัครสมาชิก</li>
+          <li>รองรับข้อความยาว เหมาะกับงานบทความและงานเขียนเชิงธุรกิจ</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          วิธีใช้งาน
+        </h3>
+        <ol className="list-decimal pl-5 text-gray-700 space-y-1 mb-4">
+          <li>พิมพ์หรือวางข้อความลงในช่องด้านบน</li>
+          <li>ดูผลสรุปจำนวนตัวอักษรทันทีด้านล่าง</li>
+          <li>นำตัวเลขไปใช้ในการตรวจสอบความยาวข้อความตามต้องการ</li>
+        </ol>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          คำถามที่พบบ่อย (FAQ)
+        </h3>
+        <div className="space-y-3 text-gray-700">
+          <div>
+            <p className="font-semibold">นับคำได้ไหม?</p>
+            <p>
+              ตอนนี้เครื่องมือเน้นการนับจำนวนตัวอักษรเป็นหลัก เพื่อความแม่นยำในงาน
+              เขียนและการจัดการข้อมูล หากต้องการฟีเจอร์นับคำสามารถแนะนำเราได้.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold">ข้อมูลของฉันปลอดภัยหรือไม่?</p>
+            <p>
+              ข้อความที่คุณพิมพ์จะถูกนับภายในเบราว์เซอร์เท่านั้น ไม่ถูกส่งไปเก็บบน
+              เซิร์ฟเวอร์ ทำให้สามารถใช้งานได้อย่างสบายใจ.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold">SQL Server LEN ต่างจากแบบปกติอย่างไร?</p>
+            <p>
+              SQL Server LEN จะนับอักขระขึ้นบรรทัดใหม่เป็น 2 ตัวอักษร ซึ่งต่างจากการ
+              นับแบบปกติที่นับเป็น 1 ตัวอักษร เครื่องมือนี้จึงให้ผลลัพธ์สองแบบเพื่อใช้
+              เทียบกันได้สะดวก.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="mt-8 w-full max-w-4xl bg-white p-6 rounded-lg shadow-md"
+        aria-label="ข้อมูลเว็บไซต์และนโยบาย"
+      >
+        <h2 className="text-2xl font-semibold text-gray-900 mb-3">
+          เกี่ยวกับเว็บไซต์
+        </h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          เว็บไซต์นี้พัฒนาขึ้นเพื่อช่วยให้ผู้ใช้งานสามารถตรวจสอบจำนวนตัวอักษรได้อย่าง
+          รวดเร็วและสะดวก ไม่ว่าคุณจะเป็นนักเขียน นักการตลาด นักพัฒนา หรือผู้ใช้ทั่วไป
+          เราต้องการให้เครื่องมือนี้เป็นผู้ช่วยที่ใช้งานง่ายและเชื่อถือได้.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">นโยบายความเป็นส่วนตัว</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          เราให้ความสำคัญกับความเป็นส่วนตัวของผู้ใช้งาน ข้อมูลข้อความที่คุณกรอกลงในช่อง
+          จะไม่ถูกเก็บหรือส่งต่อไปยังระบบภายนอก การนับจำนวนตัวอักษรทำในฝั่งผู้ใช้เท่านั้น.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">เงื่อนไขการใช้งาน</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          คุณสามารถใช้งานเครื่องมือนี้ได้ฟรีเพื่อวัตถุประสงค์ส่วนบุคคลหรือเชิงธุรกิจ
+          โดยไม่ต้องลงทะเบียน ห้ามนำเว็บไซต์ไปใช้ในกิจกรรมที่ผิดกฎหมายหรือมีเนื้อหาที่
+          ละเมิดสิทธิผู้อื่น.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">ติดต่อเรา</h3>
+        <p className="text-gray-700 leading-relaxed">
+          หากมีข้อเสนอแนะหรือคำถามเพิ่มเติม สามารถติดต่อได้ทางอีเมล:
+          <a
+            className="text-blue-700 font-semibold hover:underline ml-1"
+            href="mailto:support@charcount-sql.example"
+          >
+            support@charcount-sql.example
+          </a>
+        </p>
+      </section>
+
+      <footer className="mt-10 mb-6 text-center text-sm text-gray-500">
+        © 2024 CharCount SQL. ใช้งานฟรีเพื่อการนับจำนวนตัวอักษรออนไลน์.
+      </footer>
     </main>
   );
 }
