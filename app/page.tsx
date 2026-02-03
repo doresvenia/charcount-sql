@@ -165,15 +165,15 @@ export default function Home() {
           หากมีข้อเสนอแนะหรือคำถามเพิ่มเติม สามารถติดต่อได้ทางอีเมล:
           <a
             className="text-blue-700 font-semibold hover:underline ml-1"
-            href="mailto:support@charcount-sql.example"
+            href="mailto:choosak.jittpornwong@gmail.com"
           >
-            support@charcount-sql.example
+            choosak.jittpornwong@gmail.com
           </a>
         </p>
       </section>
 
       <footer className="mt-10 mb-6 text-center text-sm text-gray-500">
-        © 2024 CharCount SQL. ใช้งานฟรีเพื่อการนับจำนวนตัวอักษรออนไลน์.
+        © 2026 CharCount SQL. ใช้งานฟรีเพื่อการนับจำนวนตัวอักษรออนไลน์.
       </footer>
     </main>
   );
